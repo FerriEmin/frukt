@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
-import LoginForm from "./components/Login";
+import LoginForm from "./components/LoginForm";
 
 
 export default async function page(): Promise<ReactElement> {
-    return <div><LoginForm></LoginForm></div>;
+    return <div className="h-[calc(100vh-3rem)] bg-black"><LoginForm></LoginForm></div>;
 }
