@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import SignupForm from "./components/SignupForm";
+import SignupForm from "./_components/SignupForm";
 
 export default async function page (): Promise<ReactElement> {
     return <div className="flex flex-col items-center justify-center h-screen">
