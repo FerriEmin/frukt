@@ -13,7 +13,8 @@ import { Media } from './collections/Media'
 import { azureStorage } from '@payloadcms/storage-azure'
 import brevoAdapter from './utils/brevoAdapter';
 import { Customers } from './collections/Customers'
-
+import { Courses } from './collections/courses/Courses'
+import { Partisipation } from './collections/courses/Participation'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 const prefix = 'your-prefix';
@@ -26,7 +27,7 @@ export default buildConfig({
     },
   },
   email: brevoAdapter(),
-  collections: [Users, Media, Customers],
+  collections: [Users, Media, Customers, Courses, Partisipation],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
